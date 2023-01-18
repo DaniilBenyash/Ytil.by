@@ -1,14 +1,25 @@
 @import '../styles/_variables.scss';
 
+
 @mixin glow($color) {
-    width: 400px;
-    height: 400px;
     border-radius: 50%;
     background: radial-gradient($color -300%, $background-1 70%);
+    
 }
 .glow-orange{
     @include glow($color-orange);
+    animation: normal 5000ms linear;
+    animation-name: glows;
+    animation-iteration-count: infinite;
 }
 .glow-green{
     @include glow($color-green);
+    animation: normal 4000ms linear;
+    animation-name: glows;
+    animation-iteration-count: infinite;
 } 
+@keyframes glows {
+    0% { width: 360px; height: 360px; }
+    50% { width: 400px; height: 400px; }
+    100% { width: 360px; height: 360px; }
+}

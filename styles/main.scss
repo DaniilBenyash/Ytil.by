@@ -148,12 +148,23 @@
         &__glow{
 
             &_green{
-                right: 0;
+                left: -10px;
             }
             
             &_orange{
-                left: -400px;
+                left: -500px;
                 bottom: -200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .main {
+        
+        &__glow{
+
+            &_green{
+                left: -100px;
             }
         }
     }
@@ -181,14 +192,13 @@
         &__glow{
             
             &_green{
-                left: -50px;
                 top: -450px;
-                
+
             }
             
             &_orange{
-                left: -100px;
-                top: 0px;
+                left: -200px;
+                top: -100px;
             }
         }
     }
