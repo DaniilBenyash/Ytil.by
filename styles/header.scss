@@ -1,6 +1,5 @@
 @import '../styles/_variables.scss';
 
-
 .header{
     height: 70px;
     display: flex;
@@ -63,8 +62,7 @@
     .header{
         background-color: $background-2;
         padding: 0 15px;
-        width: 100%;
-
+        
         &__text{
             display: none;
         }

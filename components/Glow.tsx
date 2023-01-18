@@ -1,4 +1,3 @@
-
 type GlowProps = {
     color: 'green' | 'orange',
     className: string,

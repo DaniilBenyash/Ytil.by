@@ -16,12 +16,11 @@
     max-width: 280px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
     .flag{
         position: static;
         background: none;
         padding: 0;
-        
         
         &__icon{
             height: 50px;

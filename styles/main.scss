@@ -1,7 +1,6 @@
 @import '../styles/_variables.scss';
 
 .main{
-    // padding: 50px 250px 50px 200px;
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: row;
@@ -75,24 +74,21 @@
         position: relative;
         border-radius: 120px;
         z-index: 2;
-    }
+    }  
 
     &__glow{
         
-        &_green{
-            position: absolute;
+        &_green{  
             top: -150px;
             left: 80px;
-            z-index: 1;
         }
 
         &_orange{
-            position: absolute;
-            bottom: -130px;
+            bottom: -120px;
             right: 80px;
-            z-index: 1;
         }
     }
+
     &__flag{
         
         &_one{
@@ -116,7 +112,8 @@
         }
     }
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 1300px) {
     .main {
         flex-direction: row;
         padding: 50px 0;
@@ -126,9 +123,11 @@
         &__h1{
             @include font-headline-mob-1;
         }
+
         &__left{
             width: 100%;
         }
+
         &__right{
             display: flex;
             flex-direction: column;
@@ -148,7 +147,7 @@
         &__glow{
 
             &_green{
-                left: -10px;
+                left: 180px;
             }
             
             &_orange{
@@ -158,17 +157,19 @@
         }
     }
 }
+
 @media screen and (max-width: 900px) {
     .main {
         
         &__glow{
 
             &_green{
-                left: -100px;
+                left: 50px;
             }
         }
     }
 }
+
 @media screen and (max-width: 700px) {
     .main {
         flex-direction: column;
@@ -193,7 +194,7 @@
             
             &_green{
                 top: -450px;
-
+                left: calc(100vw - 250px);
             }
             
             &_orange{

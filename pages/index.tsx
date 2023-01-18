@@ -4,10 +4,10 @@ import Main from "../components/Main"
 const Home = () => {
   
   return (
-    <>
+    <div className="home">
       <Header />
       <Main />
-    </>
+    </div>
   )
 }
 
