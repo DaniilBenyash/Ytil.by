@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__logo">
-                <Image src="/header-image/logo.png" alt="logo" height={50} width={50}/>
+                <Image src="/header-image/logo.png" alt="logo" height={50} width={50} priority={true}/>
                 <h2 className="header__title">Ytil.<span className="header__title_green">b</span>y</h2>
             </div>
             <div className="header__contacts">

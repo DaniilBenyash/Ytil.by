@@ -1,0 +1,14 @@
+@import '../styles/_variables.scss';
+
+@mixin glow($color) {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient($color -300%, $background-1 70%);
+}
+.glow-orange{
+    @include glow($color-orange);
+}
+.glow-green{
+    @include glow($color-green);
+} 
