@@ -8,7 +8,12 @@ type FlagProps = {
 
 const Flag = ({className, text, icon}: FlagProps) => {
     return (
-        <div className={`flag ${className}`}><div className="flag__icon">{icon}</div>{text}</div>
+        <div className={`flag ${className}`}>
+            <div className="flag__icon">
+                {icon}
+            </div>
+            {text}
+        </div>
     )
 }
 

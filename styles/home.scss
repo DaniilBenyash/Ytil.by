@@ -3,7 +3,7 @@
 }
 @media screen and (max-width: 1300px) {
     .home{
-      width: 800px;
+      width: calc(100vw - 200px);
     }
   }
   

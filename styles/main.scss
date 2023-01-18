@@ -116,13 +116,10 @@
 @media screen and (max-width: 1300px) {
     .main {
         flex-direction: row;
-        padding: 50px 0;
+        padding: 150px 0 100px;
         align-items: flex-start;
         justify-content: space-between;
-
-        &__h1{
-            @include font-headline-mob-1;
-        }
+        height: 100%; 
 
         &__left{
             width: 100%;
@@ -161,6 +158,10 @@
 @media screen and (max-width: 900px) {
     .main {
         
+        &__h1{
+            @include font-headline-mob-1;
+        }
+
         &__glow{
 
             &_green{

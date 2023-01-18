@@ -6,6 +6,9 @@ import '../styles/header.scss'
 import '../styles/main.scss'
 import '../styles/flag.scss'
 import '../styles/glow.scss'
+import '../styles/about.scss'
+import '../styles/card_about.scss'
+import '../styles/title.scss'
 
 const monserrat = Montserrat({subsets: ['latin'], display: 'swap'})
 
