@@ -13,5 +13,6 @@
 @media screen and (max-width: 900px) {
     .title{
         @include font-headline-mob-1;
+        text-align: center;
     }
 }

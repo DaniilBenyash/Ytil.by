@@ -7,10 +7,12 @@
     
     
     &__cards{
+        min-height: 100%;
         margin-top: 50px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 320px;
         justify-content: center;
         justify-items: center;
         grid-gap: 20px;
@@ -26,13 +28,13 @@
 
         &__cards{
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
         }
     }
 }
 
 @media screen and (max-width: 700px) {
     .about{
-        padding: 0px 25px 50px; 
 
         &__cards{
             grid-template-columns: repeat(2, 1fr);
