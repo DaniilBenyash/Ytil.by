@@ -4,7 +4,7 @@
     &__body{
       display: flex;
       flex-direction: column;
-      // gap: 50px;
+      gap: 100px;
     }
 }
 @media screen and (max-width: 1300px) {
@@ -13,7 +13,7 @@
 
       &__body{
         padding-top: 150px;
-        gap: 100px;
+        
       }
     }
   }
