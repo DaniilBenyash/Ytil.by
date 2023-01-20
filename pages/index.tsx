@@ -4,6 +4,7 @@ import Main from "../components/Main"
 import Price from "../components/Price"
 import Galery from "../components/Gallery"
 import Contacts from "../components/Contacts"
+import ButtonScroll from "../components/ButtonScroll"
 
 const Home = () => {
   
@@ -17,6 +18,7 @@ const Home = () => {
         <Galery />
       </div>
       <Contacts />
+      <ButtonScroll />
     </div>
   )
 }

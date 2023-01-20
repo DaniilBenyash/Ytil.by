@@ -2,6 +2,7 @@ import Title from "./Title"
 import Button from "./Button"
 
 type typeInfoLinks = {
+    id: number,
     background: string,
     icon: string,
     name: string,
@@ -11,6 +12,7 @@ type typeInfoLinks = {
 
 const infoLinks: typeInfoLinks[] = [
     {
+        id: 1,
         background: '#65FDBD',
         icon: './contacts-image/phone.png',
         name: '+375(29) 182-35-80',
@@ -18,6 +20,7 @@ const infoLinks: typeInfoLinks[] = [
         className: 'contacts__item1'
     },
     {
+        id: 2,
         background: '#65FDBD',
         icon: './contacts-image/phone.png',
         name: '+375(29) 803-93-52',
@@ -25,6 +28,7 @@ const infoLinks: typeInfoLinks[] = [
         className: 'contacts__item2'
     },
     {
+        id: 3,
         background: '#7E57C2',
         icon: './contacts-image/viber.png',
         name: 'Viber',
@@ -32,6 +36,7 @@ const infoLinks: typeInfoLinks[] = [
         className: 'contacts__item3'
     },
     {
+        id: 4,
         background: '#29B6F6',
         icon: './contacts-image/telegram.png',
         name: 'Telegram',
@@ -39,6 +44,7 @@ const infoLinks: typeInfoLinks[] = [
         className: 'contacts__item4'
     },
     {
+        id: 5,
         background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
         icon: './contacts-image/instagram.png',
         name: 'Instagram',
@@ -57,7 +63,7 @@ const Contacts = () => {
             </div>
             <div className="contacts__links">
                 {infoLinks.map(link =>
-                    <div className={link.className}>
+                    <div className={link.className} key={link.id}>
                         <Button
                             background={link.background}
                             icon={link.icon}

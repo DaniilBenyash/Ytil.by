@@ -1,0 +1,25 @@
+@import '../styles/_variables.scss';
+
+.button_scroll{
+    background: url('../public/button-scroll.png') no-repeat;
+    background-position: center;
+    border: none;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    border-radius: 50%;
+
+    &:active{
+        background-color: $color-dark;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .button_scroll{
+        bottom: 30px;
+        right: 30px;
+    }
+}
