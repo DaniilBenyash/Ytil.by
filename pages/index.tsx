@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Main from "../components/Main"
 import Price from "../components/Price"
 import Galery from "../components/Gallery"
+import Contacts from "../components/Contacts"
 
 const Home = () => {
   
@@ -15,6 +16,7 @@ const Home = () => {
         <Price />
         <Galery />
       </div>
+      <Contacts />
     </div>
   )
 }
