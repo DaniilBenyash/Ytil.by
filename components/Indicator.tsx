@@ -2,6 +2,7 @@ type indicatorPropsType = {
     amount: number,
     activeNumber: number,
 }
+
 const Indicator = ({amount, activeNumber}: indicatorPropsType) => {
     const array = []
 

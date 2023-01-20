@@ -20,6 +20,7 @@ import '../styles/button_scroll.scss'
 const monserrat = Montserrat({subsets: ['latin'], display: 'swap'})
 
 const App = ({ Component, pageProps }: AppProps) => {
+  
   return (
     <>
       <main className={monserrat.className}>

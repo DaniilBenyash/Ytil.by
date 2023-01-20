@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 
 const ButtonScroll = () => {
-        const [activeButton, setActiveButton] = useState(false)
+    
+    const [activeButton, setActiveButton] = useState(false)
+
     function scrollHander(ev: any) {
         const scrollTop = ev.target.documentElement.scrollTop
 

@@ -1,4 +1,3 @@
-
 type typePropsButton = {
     background: string,
     icon: string,

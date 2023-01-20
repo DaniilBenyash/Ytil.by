@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import CardIamge from "./CardImage"
 import Glow from "./Glow"
 
-
 const Galery = () => {
 
     const [cards, setCards] = useState<Array<data>>([])

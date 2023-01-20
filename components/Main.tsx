@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Glow from "./Glow"
 import Flag from "./Flag"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 
 const Main = () => {
     return (
@@ -11,22 +11,22 @@ const Main = () => {
                 <h3 className="main__h3">Вывоз и вынос строительного мусора, хлама,<br/>мебели и т.д. <span className="main__h3_last_word">в Минске и Минской обл.</span></h3>
                 <div className="main__button">
                     <Link
-                    activeClass="main__button_price"
-                    to="price"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}>
-                        <button className="main__button_price">Узнать цены</button>
+                        activeClass="main__button_price"
+                        to="price"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                            <button className="main__button_price">Узнать цены</button>
                     </Link>
                     <Link
-                    activeClass="main__button_contacts"
-                    to="contacts"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={800}>
-                        <button className="main__button_contacts">Контакты</button>
+                        activeClass="main__button_contacts"
+                        to="contacts"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={800}>
+                            <button className="main__button_contacts">Контакты</button>
                     </Link>
                 </div>
             </div>
