@@ -1,0 +1,19 @@
+.indicator{
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    bottom: 20px;
+    right: calc(50% - 28px);
+
+    &__dot{
+        width: 8px;
+        height: 8px;
+        background-color: rgb(125, 125, 125);
+        border-radius: 50%;
+        z-index: 4;
+        
+        &-active{
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
