@@ -9,17 +9,20 @@ import ButtonScroll from "../components/ButtonScroll"
 const Home = () => {
   
   return (
-    <div className="home">
-      <Header />
-      <div className="home__body">
-        <Main />
-        <About />
-        <Price />
-        <Galery />
+    <>
+      <div className="home">
+        <Header />
+        <div className="home__body">
+          <Main />
+          <About />
+          <Price />
+          <Galery />
+        </div>
+        <Contacts />
+        <ButtonScroll />
       </div>
-      <Contacts />
-      <ButtonScroll />
-    </div>
+    </>
+
   )
 }
 
