@@ -1,5 +1,6 @@
 import { Montserrat } from '@next/font/google'
 import type { AppProps } from 'next/app'  
+import '../styles/_variables.scss'
 import '../styles/globals.scss'
 import '../styles/home.scss'
 import '../styles/header.scss'

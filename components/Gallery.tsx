@@ -14,7 +14,6 @@ const Galery = () => {
 
         getPosts()
         .then((result) => {
-            console.log()
             if(!ignore && result instanceof Array<data>){
                 setCards(result)                
             }
