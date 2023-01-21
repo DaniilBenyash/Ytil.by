@@ -13,11 +13,12 @@ const Galery = () => {
         let ignore = false
 
         getPosts()
-        .then(result => {
-            if(!ignore){
-                setCards(result)
+        .then((result) => {
+            console.log()
+            if(!ignore && result instanceof Array<data>){
+                setCards(result)                
             }
-        });
+        })
 
         return () => {
             ignore = true
@@ -26,7 +27,7 @@ const Galery = () => {
 
     return (
         <>
-            {cards
+            {cards.length > 0
             ?
             <section className="gallery">
                 <Title greenText="Наши" text="последние работы"/>
