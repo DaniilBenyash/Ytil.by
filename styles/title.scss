@@ -1,18 +1,18 @@
-@import './variables';
+@import "./_variables.scss";
 
-.title{
-    z-index: 5;
-    @include font-headline-1;
-    margin: 0;
+.title {
+  z-index: 5;
+  @include font-headline-1;
+  margin: 0;
 
-    &-green{
-        color: $color-green;
-    }
+  &-green {
+    color: $color-green;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .title{
-        @include font-headline-mob-1;
-        text-align: center;
-    }
+  .title {
+    @include font-headline-mob-1;
+    text-align: center;
+  }
 }

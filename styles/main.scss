@@ -1,206 +1,199 @@
-@import './variables';
+@import "./_variables.scss";
 
-.main{
-    height: calc(100vh - 170px);
+.main {
+  height: calc(100vh - 170px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__left {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__h1 {
+    @include font-headline-1;
+    margin: 0;
+
+    &_last_word {
+      color: $color-green;
+    }
+  }
+
+  &__h3 {
+    @include font-headline-3;
+    margin: 30px 0;
+
+    &_last_word {
+      color: $color-orange;
+    }
+  }
+
+  &__button {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    gap: 20px;
 
-    &__left{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 2;
+    button {
+      @include font-headline-3;
+      border: none;
+      padding: 20px 30px;
+      border-radius: 30px;
+      cursor: pointer;
     }
 
-    &__h1{
-        @include font-headline-1;
-        margin: 0;
+    &_price {
+      background: $color-green;
+      color: $background-1;
+      width: max-content;
 
-        &_last_word{
-            color: $color-green;
-        }
+      &:hover {
+        background: #31b980;
+      }
     }
 
-    &__h3{
-        @include font-headline-3;
-        margin: 30px 0;
-    
-        &_last_word{
-            color: $color-orange;
-        }
+    &_contacts {
+      background: $background-1;
+      color: $color-green;
+
+      &:hover {
+        background: $color-dark;
+      }
+    }
+  }
+  &__right {
+    position: relative;
+  }
+  &__image_car {
+    position: relative;
+    border-radius: 120px;
+    z-index: 2;
+  }
+
+  &__glow {
+    &_green {
+      top: -150px;
+      left: 80px;
     }
 
-    &__button{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-        button{
-            @include font-headline-3;
-            border: none;
-            padding: 20px 30px;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-
-        &_price{
-            background: $color-green;
-            color: $background-1;
-            width: max-content;
-
-            &:hover{
-                background: #31b980;
-            }
-        }
-
-        &_contacts{
-            background: $background-1;
-            color: $color-green;
-
-            &:hover{
-                background: $color-dark;
-            }
-        }
+    &_orange {
+      bottom: -120px;
+      right: 80px;
     }
-    &__right{
-        position: relative;
+  }
 
-    }
-    &__image_car{
-        position: relative;
-        border-radius: 120px;
-        z-index: 2;
-    }  
-
-    &__glow{
-        
-        &_green{  
-            top: -150px;
-            left: 80px;
-        }
-
-        &_orange{
-            bottom: -120px;
-            right: 80px;
-        }
+  &__flag {
+    &_one {
+      top: 10px;
+      left: -120px;
     }
 
-    &__flag{
-        
-        &_one{
-            top: 10px;
-            left: -120px;
-        }
-
-        &_two{
-            bottom: 90px;
-            left: -210px;
-        }
-
-        &_three{
-            top: 70px;
-            right: -150px;
-        }
-
-        &_four{
-            bottom: -30px;
-            right: -100px;
-        }
+    &_two {
+      bottom: 90px;
+      left: -210px;
     }
+
+    &_three {
+      top: 70px;
+      right: -150px;
+    }
+
+    &_four {
+      bottom: -30px;
+      right: -100px;
+    }
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .main {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        height: 100%; 
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
 
-        &__left{
-            width: 100%;
-        }
-
-        &__right{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 25px;
-            width: 100%;
-        }
-
-        &__image_car{
-            display: none;
-        }
-
-        &__button{
-            flex-direction: row;
-        }
-
-        &__glow{
-
-            &_green{
-                left: 180px;
-            }
-            
-            &_orange{
-                left: -500px;
-                bottom: -200px;
-            }
-        }
+    &__left {
+      width: 100%;
     }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 25px;
+      width: 100%;
+    }
+
+    &__image_car {
+      display: none;
+    }
+
+    &__button {
+      flex-direction: row;
+    }
+
+    &__glow {
+      &_green {
+        left: 180px;
+      }
+
+      &_orange {
+        left: -500px;
+        bottom: -200px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .main {
-        
-        &__h1{
-            @include font-headline-mob-1;
-        }
-
-        &__glow{
-
-            &_green{
-                left: 50px;
-            }
-        }
+  .main {
+    &__h1 {
+      @include font-headline-mob-1;
     }
+
+    &__glow {
+      &_green {
+        left: 50px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .main {
-        flex-direction: column;
+  .main {
+    flex-direction: column;
 
+    width: 100%;
+
+    &__button {
+      flex-direction: column;
+      align-items: stretch;
+
+      button {
         width: 100%;
-
-        &__button{
-            flex-direction: column;
-            align-items: stretch;
-            
-            button{
-                width: 100%;
-            }
-        }
-
-        &__right{
-            align-items: flex-start;
-            padding-top: 20px;
-        }
-
-        &__glow{
-            
-            &_green{
-                top: -450px;
-                left: calc(100vw - 250px);
-            }
-            
-            &_orange{
-                left: -200px;
-                top: -100px;
-            }
-        }
+      }
     }
+
+    &__right {
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+
+    &__glow {
+      &_green {
+        top: -450px;
+        left: calc(100vw - 250px);
+      }
+
+      &_orange {
+        left: -200px;
+        top: -100px;
+      }
+    }
+  }
 }
