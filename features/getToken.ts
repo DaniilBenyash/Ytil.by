@@ -8,7 +8,7 @@ export async function getToken(){
     const tokenFetch = await fetch('/api/tokenInfo')
     const dataToken: tokenType = JSON.parse(await tokenFetch.json())
     
-    if(dataToken.expires_in/60/60/24 < 50){
+    if(dataToken.expires_in/60/60/24 < 30){
         try{
             const url = 'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' 
 
