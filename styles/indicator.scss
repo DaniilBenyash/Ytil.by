@@ -1,9 +1,8 @@
 .indicator{
     position: absolute;
     display: flex;
-    gap: 8px;
     bottom: 20px;
-    right: calc(50% - 28px);
+    right: calc(50% - 36px);
 
     &__dot{
         width: 8px;
@@ -11,6 +10,7 @@
         background-color: rgb(125, 125, 125);
         border-radius: 50%;
         z-index: 4;
+        margin-right: 8px;
         
         &-active{
             background-color: rgb(255, 255, 255);

@@ -10,12 +10,12 @@
   &__logo {
     display: flex;
     flex-direction: row;
-    gap: 15px;
     align-items: center;
   }
 
   &__title {
     @include font-headline-2;
+    margin-left: 15px;
 
     &::first-letter {
       color: $color-green;
@@ -29,7 +29,6 @@
   &__contacts {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     position: relative;
     z-index: 3;
   }
@@ -38,10 +37,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    margin-right: 40px;
 
     p {
       @include font-headline-3;
+      margin-left: 10px;
     }
   }
 
@@ -49,10 +49,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
 
     p {
       @include font-headline-3;
+      margin-left: 10px;
       color: #7e57c2;
     }
   }
@@ -67,8 +67,8 @@
       display: none;
     }
 
-    &__contacts {
-      gap: 20px;
+    &__phone-number{
+      margin-right: 20px;
     }
   }
 }

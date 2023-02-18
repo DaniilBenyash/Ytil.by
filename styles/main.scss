@@ -37,7 +37,6 @@
   &__button {
     display: flex;
     flex-direction: row;
-    gap: 20px;
 
     button {
       @include font-headline-3;
@@ -51,6 +50,7 @@
       background: $color-green;
       color: $background-1;
       width: max-content;
+      margin-right: 20px;
 
       &:hover {
         background: #31b980;
@@ -125,8 +125,22 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 25px;
       width: 100%;
+    }
+
+    &__flag {
+
+      &_one {
+        margin-bottom: 25px;
+      }
+  
+      &_two {
+        margin-bottom: 25px;
+      }
+  
+      &_three {
+        margin-bottom: 25px;
+      }
     }
 
     &__image_car {
@@ -176,6 +190,10 @@
 
       button {
         width: 100%;
+      }
+
+      &_price{
+        margin-bottom: 20px;
       }
     }
 
