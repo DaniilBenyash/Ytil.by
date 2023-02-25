@@ -7,8 +7,8 @@ const Header = () => {
                 <Image 
                     src="/header-image/logo.png" 
                     alt="logo" 
-                    height={50} 
-                    width={50} 
+                    height={70} 
+                    width={70} 
                     priority={true}
                 />
                 <h2 className="header__title">
