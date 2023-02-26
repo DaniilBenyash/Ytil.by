@@ -1,5 +1,6 @@
 import { Montserrat } from '@next/font/google'
-import type { AppProps } from 'next/app'  
+import type { AppProps } from 'next/app'
+import Head from 'next/head'  
 import '../styles/_variables.scss'
 import '../styles/globals.scss'
 import '../styles/home.scss'
@@ -24,6 +25,10 @@ const App = ({ Component, pageProps }: AppProps) => {
   
   return (
     <>
+      <Head>
+        <title>Ytil.by</title>
+        <link rel="shortcut icon" href="/header-image/logo.png" type="image/png"></link>
+      </Head>
       <main className={monserrat.className}>
         <Component {...pageProps} />
       </main>
