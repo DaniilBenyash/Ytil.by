@@ -1,12 +1,12 @@
 import Title from "./Title"
 import { getPosts, type data } from "../features/getPosts"
 import { useEffect, useState } from "react"
-import CardIamge from "./CardImage"
+import Card from './Card'
 import Glow from "./Glow"
 
 const Galery = () => {
 
-    const [cards, setCards] = useState<Array<data>>([])
+    const [cards, setCards] = useState<Array<data> | null>(null)
     
     useEffect(() => {
 
@@ -26,17 +26,17 @@ const Galery = () => {
 
     return (
         <>
-            {cards.length > 0
+            {cards !== null
             ?
             <section className="gallery">
                 <Title greenText="Наши" text="последние работы"/>
                 <div className="gallery__section">
-                    {cards.map(card => <CardIamge {...card} key={card.id}/>)}
+                    {cards.map(card => <Card {...card} key={card.id}/>)}
                 </div> 
                 <Glow color="green" className="gallery__glow_green"/>
                 <Glow color="orange" className="gallery__glow_orange"/>
             </section>
-            : 
+            :
             null
             }
         </>

@@ -14,7 +14,7 @@ export type data = {
         timestamp: string,
     },
     id: string,
-    media_type: string,
+    media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM',
     media_url: string,
     permalink: string,
     timestamp: string,

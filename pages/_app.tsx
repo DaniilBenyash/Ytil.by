@@ -18,6 +18,8 @@ import '../styles/indicator.scss'
 import '../styles/contacts.scss'
 import '../styles/button.scss'
 import '../styles/button_scroll.scss'
+import '../styles/card_album.scss'
+import '../styles/card_video.scss'
 
 const monserrat = Montserrat({subsets: ['latin'], display: 'swap'})
 
