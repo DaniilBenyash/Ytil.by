@@ -34,6 +34,10 @@ const Price = () => {
                         <td>до 4 - 5 т. / 15 м<sup>3</sup></td>
                         <td>от 160 р.</td>
                     </tr>
+                    <tr>
+                        <td>до 5 т. / 20 м<sup>3</sup></td>
+                        <td>от 220 р.</td>
+                    </tr>
                     <tr className="price__table_title">
                         <th colSpan={2}>1 грузчик</th>
                     </tr>
