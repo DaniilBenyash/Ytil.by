@@ -24,19 +24,19 @@ const Price = () => {
                     </tr>
                     <tr>
                         <td>до 2 т. / 6 м<sup>3</sup></td>
-                        <td>от 90 р.</td>
+                        <td>от 110 р.</td>
                     </tr>
                     <tr>
                         <td>до 3 т. / 9 - 10 м<sup>3</sup></td>
-                        <td>от 120 р.</td>
+                        <td>от 150 р.</td>
                     </tr>
                     <tr>
                         <td>до 4 - 5 т. / 15 м<sup>3</sup></td>
-                        <td>от 160 р.</td>
+                        <td>от 200 р.</td>
                     </tr>
                     <tr>
                         <td>до 5 т. / 20 м<sup>3</sup></td>
-                        <td>от 220 р.</td>
+                        <td>от 240 р.</td>
                     </tr>
                     <tr className="price__table_title">
                         <th colSpan={2}>1 грузчик</th>
