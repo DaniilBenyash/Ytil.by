@@ -11,23 +11,21 @@ const Galery = () => {
     useEffect(() => {
 
         let ignore = false
-
         getPosts()
         .then((result) => {
-            if(!ignore && result instanceof Array<data>){
+            if(!ignore && result as Array<data>){
                 setCards(result)                
             }
         })
+        .catch(error => setCards(null))
 
         return () => {
             ignore = true
         }
     }, [])
-
     return (
         <>
-            {cards !== null
-            ?
+            {cards &&
             <section className="gallery">
                 <Title greenText="Наши" text="последние работы"/>
                 <div className="gallery__section">
@@ -36,8 +34,6 @@ const Galery = () => {
                 <Glow color="green" className="gallery__glow_green"/>
                 <Glow color="orange" className="gallery__glow_orange"/>
             </section>
-            :
-            null
             }
         </>
         

@@ -37,15 +37,14 @@ const url = "https://graph.instagram.com/me/media?fields=id,media_type,media_url
 export async function getPosts() {
     try{
         const token = await getToken()
-        
         const response = await fetch(url + token)    
         
         const data = await response.json()
-
+        
         return data.data
 
     } catch(error: any){
-        
+
         return error
     }
 }
