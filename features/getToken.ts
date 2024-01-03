@@ -12,7 +12,6 @@ export async function getToken(){
     
     
     const dataToken: any = await firebase.getData()
-    console.log(dataToken)
     if(dataToken.expires_in/60/60/24 < 10){
         try{
             
@@ -24,7 +23,7 @@ export async function getToken(){
             return await firebase.setData(dataRefreshToken)
             
         } catch(error: any){
-            console.log(error);
+            return error
         }
         
     }else{
