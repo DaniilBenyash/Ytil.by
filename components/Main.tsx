@@ -36,7 +36,7 @@ const Main = () => {
                     <Glow color="orange" className="main__glow_orange"/>
                     <Flag 
                         className="main__flag_one" 
-                        text="Цены от 60 р." 
+                        text="Цены от 80 р." 
                         icon={<Image src="/main-image/money.png" alt="icon_money" width={40} height={40}/>}
                     />
                     <Flag 
