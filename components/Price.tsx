@@ -20,23 +20,23 @@ const Price = () => {
                     </tr>
                     <tr>
                         <td>до 1 т. / 3 м<sup>3</sup></td>
-                        <td>от 60 р.</td>
+                        <td>от 80 р.</td>
                     </tr>
                     <tr>
                         <td>до 2 т. / 6 м<sup>3</sup></td>
-                        <td>от 110 р.</td>
+                        <td>от 140 р.</td>
                     </tr>
                     <tr>
                         <td>до 3 т. / 9 - 10 м<sup>3</sup></td>
-                        <td>от 150 р.</td>
+                        <td>от 180 р.</td>
                     </tr>
                     <tr>
                         <td>до 4 - 5 т. / 15 м<sup>3</sup></td>
-                        <td>от 200 р.</td>
+                        <td>от 240 р.</td>
                     </tr>
                     <tr>
                         <td>до 5 т. / 20 м<sup>3</sup></td>
-                        <td>от 240 р.</td>
+                        <td>от 300 р.</td>
                     </tr>
                     <tr className="price__table_title">
                         <th colSpan={2}>1 грузчик</th>
@@ -47,7 +47,7 @@ const Price = () => {
                     </tr>
                     <tr>
                         <td>Выезд</td>
-                        <td>от 25 р.</td>
+                        <td>от 30 р.</td>
                     </tr>
                     <tr>
                         <td>Мешок (ходка) на лифте</td>
