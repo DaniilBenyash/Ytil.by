@@ -32,7 +32,7 @@ const Price = () => {
                     </tr>
                     <tr>
                         <td>до 4 - 5 т. / 15 м<sup>3</sup></td>
-                        <td>от 270 р.</td>
+                        <td>от 300 р.</td>
                     </tr>
                     <tr>
                         <td>до 5 т. / 20 м<sup>3</sup></td>
